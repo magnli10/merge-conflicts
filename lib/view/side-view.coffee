@@ -7,7 +7,7 @@ class SideView extends CoveringView
     @div class: "side #{side.klass()} #{side.position} ui-site-#{side.site()}", =>
       @div class: 'controls', =>
         @label class: 'text-highlight', side.ref
-        @span class: 'text-subtle', "// #{side.description()}"
+        @span class: 'text-highlight', "// #{side.description()}"
         @span class: 'pull-right', =>
           @button class: 'btn btn-xs inline-block-tight revert', click: 'revert', outlet: 'revertBtn', 'Revert'
           @button class: 'btn btn-xs inline-block-tight', click: 'useMe', outlet: 'useMeBtn', 'Use Me'
